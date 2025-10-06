@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Élder Peter M. Johnson" />
+  <title>El poder de ministrar uno a uno — Élder Peter M. Johnson</title>
+
+  <!-- Google Font (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#FBFBFD;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f766e;
+      --accent-2:#0ea5a3;
+      --max-width:900px;
+      --radius:14px;
+      color-scheme: light;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    /* Reset-ish */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #F7FAFC 0%, var(--bg) 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+      font-size:16px;
+    }
+
+    /* Layout */
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(15,23,42,0.08);
+      padding:28px;
+      margin:24px;
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:20px;
+    }
+
+    .title {
+      margin:0;
+      font-size:1.375rem;
+      line-height:1.15;
+      letter-spacing:-0.2px;
+      font-weight:700;
+    }
+    .byline{
+      margin:0;
+      color:var(--muted);
+      font-weight:500;
+      font-size:0.95rem;
+    }
+
+    nav {
+      margin-top:12px;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .nav-pill{
+      background:rgba(14,165,233,0.06);
+      color:var(--accent);
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:0.85rem;
+      border:1px solid rgba(14,165,233,0.08);
+      text-decoration:none;
+    }
+
+    main{
+      display:block;
+    }
+
+    section{
+      margin-bottom:20px;
+      padding:14px 12px;
+      border-radius:10px;
+      background:linear-gradient(180deg, rgba(2,6,23,0.01), transparent);
+    }
+
+    h2{
+      margin:0 0 8px 0;
+      font-size:1.05rem;
+      color:#06202a;
+      font-weight:700;
+    }
+    h3{
+      margin:0 0 6px 0;
+      font-size:0.98rem;
+      color:#0b2b2a;
+      font-weight:600;
+    }
+
+    p{margin:0 0 12px 0; color:#0b2230;}
+    strong{color:#022a28}
+    blockquote{
+      margin:12px 0;
+      padding:12px 16px;
+      border-left:4px solid var(--accent);
+      background:rgba(14,165,233,0.03);
+      color:var(--muted);
+      border-radius:6px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:18px;
+      align-items:start;
+    }
+
+    aside.card{
+      background:linear-gradient(180deg, #fff, #fcfeff);
+      border-radius:10px;
+      padding:14px;
+      box-shadow:0 6px 18px rgba(6,10,15,0.04);
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:18px;
+      border-top:1px dashed rgba(11,30,36,0.06);
+      padding-top:14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+
+    .sr-only{
+      position:absolute!important;
+      height:1px;width:1px;overflow:hidden;
+      clip:rect(1px,1px,1px,1px);white-space:nowrap;
+    }
+
+    /* Responsive */
+    @media (max-width:880px){
+      .two-col{grid-template-columns:1fr;}
+      body{padding:18px}
+      .container{padding:20px}
+      .title{font-size:1.2rem}
+    }
+
+    @media (max-width:420px){
+      body{padding:12px}
+      .container{padding:16px}
+      .title{font-size:1.05rem}
+    }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#content">Saltar al contenido</a>
+
+  <article class="container" aria-labelledby="titulo-articulo" role="article">
+    <header>
+      <div>
+        <h1 id="titulo-articulo" class="title">El poder de ministrar uno a uno</h1>
+        <p class="byline">Por el élder <strong>Peter M. Johnson</strong> — De los Setenta</p>
+      </div>
+
+      <div aria-hidden="true">
+        <!-- Pequeña etiqueta informativa -->
+        <span style="display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:6px 10px;border-radius:999px;font-weight:600;font-size:0.85rem">
+          Discurso (adaptado)
+        </span>
+      </div>
+    </header>
+
+    <nav aria-label="Secciones del discurso">
+      <a class="nav-pill" href="#introduccion">Introducción</a>
+      <a class="nav-pill" href="#adorar-templo">Adorar en la Casa del Señor</a>
+      <a class="nav-pill" href="#ministrar">Ministrar uno a uno</a>
+      <a class="nav-pill" href="#experiencias">Experiencias personales</a>
+      <a class="nav-pill" href="#vivir-doctrina">Vivir la doctrina</a>
+      <a class="nav-pill" href="#conclusion">Conclusión</a>
+    </nav>
+
+    <main id="content" tabindex="-1">
+      <section id="introduccion" aria-labelledby="intro-h">
+        <h2 id="intro-h">Introducción</h2>
+        <p>Hermanos y hermanas, gracias por su fiel devoción al venir a Jesucristo en estos tiempos difíciles. Son maravillosos y hermosos; cada uno de ustedes es un hijo de Dios. Ruego que reconozcamos la influencia del Espíritu Santo a medida que llegamos a ser y nos ayudamos unos a otros a llegar a ser devotos discípulos de Jesucristo y a sentir Su gozo al adorar en la Casa del Señor.</p>
+      </section>
+
+      <section id="adorar-templo" aria-labelledby="adorar-h">
+        <h2 id="adorar-h">Adorar en la Casa del Señor: el camino para llegar a ser devotos discípulos de Cristo</h2>
+        <p>El presidente Russell M. Nelson declaró:</p>
+        <blockquote>“Este es el momento de que ustedes y yo nos preparemos para la Segunda Venida de nuestro Señor y Salvador, Jesucristo. Este es el momento de que hagamos de nuestro discipulado nuestra máxima prioridad. En un mundo lleno de distracciones vertiginosas, ¿cómo podemos hacerlo?”.</blockquote>
+
+        <p>Él mismo dio la respuesta:</p>
+        <blockquote>“La adoración regular en el templo nos ayudará. En la Casa del Señor nos centramos en Jesucristo, llegamos a conocerlo. Todo aquel que busque con sinceridad a Jesucristo lo hallará en el templo”.</blockquote>
+      </section>
+
+      <section id="ministrar" aria-labelledby="ministrar-h">
+        <h2 id="ministrar-h">Ministrar uno a uno: la manera del Salvador para conducir a otros a Su poder redentor</h2>
+        <p>Así pues, ¿cómo llegamos a ser, y nos ayudamos unos a otros a llegar a ser, devotos discípulos de Jesucristo y a sentir Su gozo al adorar en la Casa del Señor? <strong>Ministrando uno a uno.</strong></p>
+        <p>Ministrar a la manera del Salvador implica amar sin juzgar, tener bondad, paciencia y compasión. Al ministrar a cada persona en particular, la invitamos a venir a Jesucristo y adorar en la Casa del Señor, a fin de que reciba Su poder redentor.</p>
+
+        <h3>El ejemplo de la mujer samaritana</h3>
+        <p>Del Señor Jesucristo aprendemos el poder de ministrar uno a uno con amor y sin juzgar. ¿Recuerdan a la mujer samaritana junto al pozo? Es posible que esa mujer se sintiera insignificante, sola, desanimada e invisible.</p>
+        <p>Para Él, esa mujer era una hija de Dios. Jesucristo le enseñó que, por medio de Él, se puede recibir la vida eterna participando del agua viva:</p>
+        <blockquote>“El que bebiere del agua que yo daré no tendrá sed jamás, sino que el agua que yo daré será en él una fuente de agua que brote para vida eterna”.</blockquote>
+        <p>La samaritana sintió el amor del Salvador y recibió, por medio del Espíritu, un testimonio de que Él era el Mesías. Tras ese testimonio, invitó a otros y muchos creyeron.</p>
+
+        <h3>El ejemplo de Pedro y Juan</h3>
+        <p>De Pedro y Juan aprendemos el poder de ministrar con compasión. Recuerden al hombre cojo de nacimiento que pedía a la puerta del templo:</p>
+        <blockquote>“Y Pedro dijo: No tengo plata ni oro, mas lo que tengo te doy: En el nombre de Jesucristo de Nazaret, ¡levántate y anda!”.</blockquote>
+        <p>Pedro lo levantó, el hombre fue sanado y entró en el templo, “andando, y saltando y alabando a Dios”.</p>
+      </section>
+
+      <div class="two-col" aria-hidden="false">
+        <div>
+          <section id="experiencias" aria-labelledby="experiencias-h">
+            <h2 id="experiencias-h">El poder sanador del amor y del Espíritu en nuestras pruebas personales</h2>
+            <p>Amigos míos, ha habido momentos en mi vida en los que también me he sentido insignificante, solo, desanimado e invisible. Fui bautizado y confirmado miembro de La Iglesia de Jesucristo de los Santos de los Últimos Días cuando tenía diecinueve años. Un año después, acepté el llamamiento a servir como misionero de tiempo completo...</p>
+
+            <p>Al principio de mi servicio misional, descubrí que hubo un tiempo en el que a las personas de ascendencia africana negra no se les permitió disfrutar de todas las bendiciones de la adoración en la Casa del Señor. Enterarme de aquello me produjo sentimientos de enojo, confusión, duda y temor tan intensos que, por un tiempo, perdí la capacidad de reconocer al Espíritu Santo.</p>
+
+            <p>Afortunadamente, tuve un maravilloso compañero de misión, <strong>Kevin Vick</strong>, quien me ministró con amor, paciencia y bondad. Cada noche, al verme sentir dudas e incertidumbre, me decía simplemente:</p>
+            <blockquote>“Élder Johnson, lo amo”.</blockquote>
+
+            <p>Al orar, sentí la impresión de leer la sección 6 de <strong>Doctrina y Convenios</strong>, versículos 21–23:</p>
+            <blockquote>“He aquí, soy Jesucristo, el Hijo de Dios. Soy la luz que brilla en las tinieblas... ¿No hablé paz a tu mente en cuanto al asunto? ¿Qué mayor testimonio puedes tener que de Dios?”.</blockquote>
+
+            <p>Sentí el amor del Salvador, Su misericordia y Su confirmación de que la Iglesia es Su reino sobre la tierra y que es necesaria para prepararnos para Su Segunda Venida.</p>
+          </section>
+
+          <section id="vivir-doctrina" aria-labelledby="vivir-doctrina-h">
+            <h2 id="vivir-doctrina-h">Vivir la doctrina de Cristo: el impulso espiritual que nos lleva a ministrar con amor</h2>
+            <p>¿Qué podemos hacer para ministrar a la manera del Salvador con la máxima eficacia? <strong>Vivir la doctrina de Cristo</strong> nos ayudará. El presidente Nelson enseñó que esto produce un ciclo virtuoso que nos bendice con más caridad, humildad, generosidad y paz.</p>
+
+            <p>El élder Dale G. Renlund enseña que:</p>
+            <blockquote>“La labor del Salvador es sanarnos. Nuestra labor es amar, amar y ministrar de tal manera que los demás sean atraídos a Jesucristo”.</blockquote>
+
+            <p>Dos fuentes que realzan nuestra capacidad:</p>
+            <ul>
+              <li>El estudio diario del <strong>Libro de Mormón</strong>.</li>
+              <li>La participación semanal de la <strong>Santa Cena</strong>.</li>
+            </ul>
+
+            <p>Recuerden: <em>“En las ordenanzas del sacerdocio se manifiesta el poder de la divinidad”.</em> Este poder fortalece nuestro deseo y capacidad de ministrar uno a uno.</p>
+          </section>
+        </div>
+
+        <aside class="card" role="complementary" aria-labelledby="aside-h">
+          <h3 id="aside-h" style="margin-top:0">Notas rápidas</h3>
+          <p><strong>Temas clave</strong></p>
+          <ul>
+            <li>Ministrar con amor, sin juzgar.</li>
+            <li>Guiar a las personas a la Casa del Señor.</li>
+            <li>Vivir la doctrina de Cristo: estudio y ordenanzas.</li>
+          </ul>
+
+          <p><strong>Sugerencia de uso:</strong> Este HTML puede pegarse directamente en un gestor de contenidos o adaptarse a una plantilla para publicaciones.</p>
+
+          <p style="margin-top:12px;font-size:0.9rem;color:var(--muted)">Accesibilidad: enlaces de navegación, contraste legible y estructura semántica para lectores de pantalla.</p>
+        </aside>
+      </div>
+
+      <section id="conclusion" aria-labelledby="concl-h">
+        <h2 id="concl-h">Conclusión</h2>
+        <p>Amigos míos, les prometo que al vivir la doctrina de Cristo y ministrar a cada persona de maneras que la conduzcan a la Casa del Señor, seguiremos adelante con fe en Jesucristo, aunque tengamos preguntas sin respuesta o nos sintamos insignificantes, solos, desanimados o invisibles.</p>
+
+        <p>Invitaremos a cada persona a venir a Jesucristo y adorar en la Casa del Señor para que reciba Su poder redentor y Su amor. En la Casa del Señor sentiremos la misericordia del Salvador, encontraremos respuestas a nuestras preguntas más inquietantes y comprenderemos mejor el gozo de Su Evangelio.</p>
+
+        <p style="font-weight:700;margin-top:10px">En el nombre de Jesucristo. Amén.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div>Adaptado para lectura web — diseño responsivo.</div>
+      <div aria-hidden="true" style="font-weight:600;color:var(--muted)">© Discurso</div>
+    </footer>
+  </article>
+</body>
+</html>
